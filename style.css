@@ -1,0 +1,67 @@
+@keyframes MyCardFlip
+{
+    0%
+    {
+        transform: scale(1, 1) translateX(0%);
+    }
+    100%
+    {
+        transform: scale(0, 1) translateX(50%);
+    }
+}
+
+@keyframes MyCardFlip2
+{
+    0%
+    {
+        transform: scale(0, 1) translateX(50%);
+    }
+    100%
+    {
+        transform: scale(1, 1) translateX(0%);
+    }
+}
+
+#Interface
+{
+    width: 100px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+#Card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.Card1
+{
+    background-image: url(http://localhost/Workspace/AnimationsCSS/CardFront.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 200px;
+}
+
+.Card2
+{
+    background-image: url(http://localhost/Workspace/AnimationsCSS/CardBack.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 200px;
+}
+
+.SwipeOutAnimation
+{
+    animation-name: MyCardFlip;
+    animation-duration: 0.5s;
+}
+
+.SwipeInAnimation
+{
+    animation-name: MyCardFlip2;
+    animation-duration: 0.5s;
+}
